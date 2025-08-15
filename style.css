@@ -155,12 +155,17 @@ h2::after {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   border: 1px solid #333;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 255, 208, 0.2);
   border-color: #00ffd0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-image {
