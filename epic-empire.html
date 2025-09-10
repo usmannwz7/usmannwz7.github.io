@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epic Empire - Usman Nawaz Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project-page.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Usman Nawaz</div>
+      <ul class="nav-menu">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6Z"/>
+        </svg>
+      </button>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="project-hero">
+    <div class="hero-content">
+      <img src="projects/epic-empire/thumbnail.webp" alt="Epic Empire" class="project-icon">
+      <h1>Epic Empire</h1>
+      <div class="project-meta">
+        <span class="meta-item">Role: Unity Developer</span>
+        <span class="meta-item">Platform: Mobile (Android/iOS)</span>
+        <span class="meta-item">Genre: Strategy, RPG</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-container">
+    <section class="project-overview">
+      <h2>Project Overview</h2>
+      <p>Epic Empire is an immersive hotel management simulation game that puts players in the role of a hotel tycoon. Players design, build, and manage their own luxury hotel empire, from small boutique hotels to massive resort complexes. The game features detailed management mechanics, guest satisfaction systems, and strategic business decisions that impact the success of your hotel chain.</p>
+    </section>
+
+    <section class="project-screenshots">
+      <h2>Screenshots</h2>
+      <div class="screenshot-gallery portrait-screenshots">
+        <div class="screenshot-item">
+          <img src="projects/epic-empire/screenshot-1.jpg" alt="Epic Empire Screenshot 1">
+        </div>
+        <div class="screenshot-item">
+          <img src="projects/epic-empire/screenshot-2.jpg" alt="Epic Empire Screenshot 2">
+        </div>
+        <div class="screenshot-item">
+          <img src="projects/epic-empire/screenshot-3.jpg" alt="Epic Empire Screenshot 3">
+        </div>
+        <div class="screenshot-item">
+          <img src="projects/epic-empire/screenshot-4.jpg" alt="Epic Empire Screenshot 4">
+        </div>
+      </div>
+    </section>
+
+    <div class="project-navigation">
+      <a href="index.html#projects" class="back-button">← Back to Projects</a>
+      <div class="next-project">
+        <a href="perfect-hotel.html" class="next-button">Next Project: Perfect Hotel →</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Usman Nawaz</p>
+  </footer>
+
+  <script>
+    // Theme switching functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to dark
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', currentTheme);
+    
+    // Theme toggle click handler
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Mobile navigation toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+  </script>
+</body>
+</html> 

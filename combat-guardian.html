@@ -17,6 +17,14 @@
         <li><a href="index.html#experience" class="nav-link">Experience</a></li>
         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6Z"/>
+        </svg>
+      </button>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -27,12 +35,24 @@
 
   <div class="project-hero">
     <div class="hero-content">
+      <img src="projects/combat-guardian/thumbnail.webp" alt="Combat Guardian" class="project-icon">
       <h1>Combat Guardian: Under Attack</h1>
-      <p class="project-subtitle">A strategic defense game where players protect their base from waves of enemies</p>
       <div class="project-meta">
         <span class="meta-item">Role: Unity Developer</span>
-        <span class="meta-item">Platform: Mobile (Android/iOS)</span>
+        <span class="meta-item">Platform: Mobile (iOS)</span>
         <span class="meta-item">Genre: Strategy, Defense</span>
+      </div>
+      
+      <div class="download-buttons">
+        <a href="https://apps.apple.com/us/app/combat-guardian-under-attack/id6450951637" target="_blank" class="download-btn appstore-btn">
+          <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+          </svg>
+          <div class="btn-content">
+            <span class="btn-label">Download on the</span>
+            <span class="btn-store">App Store</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -40,112 +60,20 @@
   <div class="project-container">
     <section class="project-overview">
       <h2>Project Overview</h2>
-      <p>Combat Guardian: Under Attack is an engaging mobile strategy game where players must defend their base against increasingly challenging waves of enemies. The game combines tower defense mechanics with real-time strategy elements, requiring players to think tactically about unit placement and resource management.</p>
-      
-      <div class="project-details">
-        <div class="detail-item">
-          <h3>Key Features</h3>
-          <ul>
-            <li>Multiple tower types with unique abilities</li>
-            <li>Progressive difficulty system</li>
-            <li>Resource management mechanics</li>
-            <li>Upgrade system for towers and base</li>
-            <li>Multiple enemy types with different behaviors</li>
-            <li>Strategic placement mechanics</li>
-          </ul>
-        </div>
-        
-        <div class="detail-item">
-          <h3>Technical Highlights</h3>
-          <ul>
-            <li>Optimized for mobile performance</li>
-            <li>Efficient pathfinding algorithms</li>
-            <li>Dynamic difficulty scaling</li>
-            <li>Smooth 60fps gameplay</li>
-            <li>Cross-platform compatibility</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-media">
-      <h2>Gameplay Video</h2>
-      <div class="video-container">
-        <video controls poster="images/combat-guardian-poster.jpg">
-          <source src="videos/combat-guardian-gameplay.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <p>Combat Guardian: Under Attack is an immersive hotel management simulation game that puts players in the role of a hotel tycoon. Players design, build, and manage their own luxury hotel empire, from small boutique hotels to massive resort complexes. The game features detailed management mechanics, guest satisfaction systems, and strategic business decisions that impact the success of your hotel chain.</p>
     </section>
 
     <section class="project-screenshots">
       <h2>Screenshots</h2>
-      <div class="screenshot-gallery">
+      <div class="screenshot-gallery portrait-screenshots">
         <div class="screenshot-item">
-          <img src="images/combat-guardian-1.jpg" alt="Combat Guardian Screenshot 1">
-          <p>Main gameplay screen showing tower placement</p>
-        </div>
-        <div class="screenshot-item">
-          <img src="images/combat-guardian-2.jpg" alt="Combat Guardian Screenshot 2">
-          <p>Upgrade menu with tower customization options</p>
+          <img src="projects/combat-guardian/screenshot-1.png" alt="Combat Guardian Screenshot 1">
         </div>
         <div class="screenshot-item">
-          <img src="images/combat-guardian-3.jpg" alt="Combat Guardian Screenshot 3">
-          <p>Wave management and enemy variety</p>
+          <img src="projects/combat-guardian/screenshot-2.png" alt="Combat Guardian Screenshot 2">
         </div>
         <div class="screenshot-item">
-          <img src="images/combat-guardian-4.jpg" alt="Combat Guardian Screenshot 4">
-          <p>Strategic base defense layout</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-development">
-      <h2>Development Process</h2>
-      <div class="development-timeline">
-        <div class="timeline-item">
-          <h3>Phase 1: Core Mechanics</h3>
-          <p>Implemented basic tower defense mechanics including tower placement, enemy spawning, and pathfinding systems.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Phase 2: Gameplay Systems</h3>
-          <p>Developed upgrade systems, resource management, and multiple tower types with unique abilities.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Phase 3: Polish & Optimization</h3>
-          <p>Optimized performance for mobile devices, added visual effects, and fine-tuned game balance.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-challenges">
-      <h2>Challenges & Solutions</h2>
-      <div class="challenge-item">
-        <h3>Performance Optimization</h3>
-        <p><strong>Challenge:</strong> Maintaining smooth 60fps gameplay with multiple enemies and effects on mobile devices.</p>
-        <p><strong>Solution:</strong> Implemented object pooling for enemies and projectiles, optimized rendering with LOD systems, and used efficient algorithms for collision detection.</p>
-      </div>
-      <div class="challenge-item">
-        <h3>Balanced Gameplay</h3>
-        <p><strong>Challenge:</strong> Creating engaging difficulty progression that keeps players challenged without being frustrating.</p>
-        <p><strong>Solution:</strong> Developed a dynamic difficulty system that adapts to player skill level and provides multiple difficulty modes for different player types.</p>
-      </div>
-    </section>
-
-    <section class="project-results">
-      <h2>Results & Impact</h2>
-      <div class="results-grid">
-        <div class="result-item">
-          <h3>Player Engagement</h3>
-          <p>Average session time of 15+ minutes with high retention rates</p>
-        </div>
-        <div class="result-item">
-          <h3>Performance</h3>
-          <p>Consistent 60fps on mid-range mobile devices</p>
-        </div>
-        <div class="result-item">
-          <h3>User Feedback</h3>
-          <p>4.5+ star rating with positive reviews on gameplay mechanics</p>
+          <img src="projects/combat-guardian/screenshot-3.png" alt="Combat Guardian Screenshot 3">
         </div>
       </div>
     </section>
@@ -163,6 +91,23 @@
   </footer>
 
   <script>
+    // Theme switching functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to dark
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', currentTheme);
+    
+    // Theme toggle click handler
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
     // Mobile navigation toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
