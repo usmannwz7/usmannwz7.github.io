@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usman Nawaz - Game Developer and Producer Portfolio</title>
+  <title>Usman Nawaz - Game Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -34,12 +34,12 @@
 
   <header>
     <h1>Usman Nawaz</h1>
-    <p>Game Developer | Unity | C#</p>
+    <p>Game Developer | Unity & C# | PixiJS & TypeScript | Real-time Multiplayer</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a passionate game developer turned game producer, bringing a blend of technical expertise and production management to every project. Starting my career in hands-on development, I built a strong foundation in Unity, gameplay systems, and performance optimization. Now, as a producer, I manage teams, coordinate workflows, and ensure projects are delivered on time and at quality. My dual perspective helps bridge the gap between creative vision and practical execution, making games that are both fun to play and smooth to produce.</p>
+    <p>I'm a game developer with 4+ years building mobile and web games in Unity/C# and PixiJS/TypeScript. For the past two years I've worked on a live real-time PvP slot-battle platform on a Nakama backend, building onboarding, inbox and live spectating systems and handling late joins, reconnects and client–server state sync. Before that I was the sole developer on several shipped mobile games, owning everything from gameplay to ads, analytics and in-app purchases. I'm currently doing an M.Sc. at TU Ilmenau and looking for game developer roles in Germany.</p>
   </section>
 
   <section id="projects">
@@ -78,10 +78,10 @@
       
       <a href="perfect-hotel.html" class="project-card">
         <div class="project-image">
-          <img src="projects/perfect-hotel/thumbnail.png" alt="Perfect Hotel">
+          <img src="projects/perfect-hotel/thumbnail.png" alt="My Hotel Tycoon - idle game 3D">
         </div>
         <div class="project-content">
-          <h3>Perfect Hotel</h3>
+          <h3>My Hotel Tycoon - idle game 3D</h3>
           <p class="project-scope">Scope of work: Development</p>
         </div>
       </a>
@@ -108,10 +108,10 @@
       
       <a href="eatventure.html" class="project-card">
         <div class="project-image">
-          <img src="projects/eatventure/thumbnail.png" alt="Eatventure">
+          <img src="projects/eatventure/thumbnail.png" alt="Idle Restaurant Tycoon">
         </div>
         <div class="project-content">
-          <h3>Eatventure</h3>
+          <h3>Idle Restaurant Tycoon</h3>
           <p class="project-scope">Scope of work: Development, Project Management</p>
         </div>
       </a>
@@ -182,15 +182,28 @@
     <h2>Work Experience</h2>
     <div class="experience-item">
       <h3>MFC Games</h3>
-      <p class="job-title">Unity Developer</p>
-      <p class="job-dates">September 2024 - Present</p>
+      <p class="job-title">Game Developer – Web (TypeScript, PixiJS)</p>
+      <p class="job-dates">July 2026 - Present · Remote</p>
       <ul>
-        <li>Developed and optimized slot game gameplay features with smooth and engaging mechanics.</li>
-        <li>Implemented game features such as inbox, profile management and onboarding flows to improve user experience and retention.</li>
-        <li>Integrated and fine-tuned sound effects and visual effects to enhance gameplay feedback and immersion.</li>
-        <li>Built and adjusted responsive UI with animations and transitions for polished presentation across devices.</li>
-        <li>Debugged and optimized client-side features to ensure stable performance across platforms.</li>
-        <li>Contributed to the overall development cycle, from feature implementation to testing and final polish.</li>
+        <li>Built live spectating for Reel Rumble's web client: viewers join 1v1 battles in progress, with guest login and a live spectator count (Nakama, WebSockets)</li>
+        <li>Built join and reconnect handling that checks the server's match state and turns away joins to battles that can no longer be caught up</li>
+        <li>Fixed real-time sync issues between server events and the slot game during free spins, including a reconnect deadlock, so late joiners land on the current reel state</li>
+        <li>Built the Bonus Drop promo across matchmaking, in-game HUD and results screen, with animated PixiJS UI and responsive layouts for desktop and mobile</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>MFC Games</h3>
+      <p class="job-title">Unity Developer</p>
+      <p class="job-dates">September 2024 - June 2026 · Remote</p>
+      <p>Worked on two real-time PvP slot games on a Nakama backend: Clash Casino (lobby, 5 slot titles, two battle modes, loot, quests, inbox) and its successor, Reel Rumble.</p>
+      <ul>
+        <li>Designed and built a server-driven onboarding system with priority-based tutorial sequences, spotlight highlights and input blocked outside the highlighted element</li>
+        <li>Built the in-game inbox end to end: message list, unread and seen states, deletion and reward claiming, connected to the Nakama backend</li>
+        <li>Built live spectating for Reel Rumble, letting viewers join matches in progress and follow both players in real time</li>
+        <li>Built battle feedback driven by server match state: win-streak effects, final-spin anticipation, prize pot tiers and tie-breaker sequences</li>
+        <li>Fixed a race condition that froze the game at battle end, and built reconnection handling that restores game state when players rejoin</li>
+        <li>Built the SFX and haptics systems, and responsive UI for phones and tablets in portrait and landscape</li>
       </ul>
     </div>
     
@@ -212,11 +225,12 @@
       <h3>Ferro Entertainment</h3>
       <p class="job-title">Unity Developer</p>
       <p class="job-dates">July 2022 - August 2024</p>
+      <p>Sole developer on several mobile games, from gameplay through release.</p>
       <ul>
-        <li>Built interactive gameplay systems and mechanics</li>
-        <li>Developed scalable architecture for game features</li>
-        <li>Debugged and optimized game performance</li>
-        <li>Mentored junior developers and shared best practices</li>
+        <li>Rebuilt the core gameplay of published mobile titles for a publishing partner, then reskinned them into new releases, including a real-time territory-conquest strategy game built from scratch</li>
+        <li>Worked on an open-world action game: free-roam city, vehicle stealing and driving, weapons and combat, an in-game economy, and mission-based progression</li>
+        <li>Built a sports game with an equipment system: players unlock and equip attachments that boost team stats, with different loadouts giving different builds and opponents matched to the player's team stats</li>
+        <li>Integrated ads, analytics and in-app purchases across titles, and built full game loops: main menu, customization, progression and UI</li>
       </ul>
     </div>
   </section>
@@ -229,7 +243,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Usman Nawaz</p>
+    <p>&copy; 2026 Usman Nawaz</p>
   </footer>
 
   <script>
